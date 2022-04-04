@@ -1,0 +1,139 @@
+
+<style>
+
+.accordion {
+  max-width: 500px;
+  border: 1px solid #200;
+  border-bottom: none;
+}
+
+.accordion:last-child {
+  border-bottom: 1px solid #000;
+}
+
+
+
+.accordion.header {
+  display: flex;
+  padding: 24px;
+  cursor: pointer;
+  color: #242;
+  background-color: #F2F2F2F2;
+}
+
+.accordion-title {
+  flex 1;
+}
+
+.accordion-symbol {
+  width: 24px;
+  color: #543;
+}
+
+.accordion-content {
+  padding: 24px;
+}
+
+.accordion-content {
+  display: none;
+}
+
+
+  </style
+
+
+
+<section id="Courses Taken">
+
+<h2>Courses Taken</h2>
+
+<div class="accordion">
+  <div class="accordion-header">
+    <div class="accordion-title">Freshman Year <strong>2019-2020</strong></div>
+    <span class="accordion-symbol">+</span>
+  </div>
+    <div class="accordian-content">
+        Freshman year I dove straight into My required classes for my major while still getting my normal required classes done. Listed below are the classes I was taking my freshman year.
+        <ul>
+          <li>Networking basics;
+              Information Literacy;
+              Rhetoric I;
+              Micro Operations Enviroment;
+              College Success;
+              Current Microcomputer Systems;
+              Computer Ethics;
+              Spreadsheet applications;
+              Intro to Statistics;
+              Gen Pyschology;
+              World Religions;
+            </li>
+    </div>
+</div>
+
+<div class="accordion">
+  <div class="accordion-header">
+    <div class="accordion-title">Sophmore Year <strong>2020-2021</strong></div>
+    <span class="accordion-symbol">+</span>
+  </div>
+    <div class="accordian-content">
+        In my Sophmore year was still the same as freshman year where there was still a mix of classes between major required and college required classes.
+        <ul>
+          <li>Database Management Systems;
+              Rhetoric II;
+              Personal Finance;
+              American National Government;
+              Intro to Sociology;
+              Technical Communications;
+              Intro to criminal Justice;
+              Computer Science Principals;
+              Intro to Networking;
+              Web Programming;
+              Principles Management;
+            </li>
+    </div>
+</div>
+
+<div class="accordion">
+  <div class="accordion-header">
+    <div class="accordion-title">Junior Year <strong>2021-2022</div>
+    <span class="accordion-symbol">+</span>
+  </div>
+    <div class="accordian-content">
+        The fall semester of my junoir year was when i started all my major driven classes being more dominant over my college required classes.
+        <ul>
+          <li>Programming for Beginners;
+              Cybersecurity Fundementals;
+              Intro to GNU/Linux;
+              Cyber Crimes;
+              Information Assurance;
+              Cults and New Religions;
+              Professional Communication;
+              Javascript;
+              Digital Forensics;
+              Cyber Security Operations;
+              Cloud Computing;
+              Graphic Novels;
+
+            </li>
+    </div>
+</div>
+
+
+
+</section>
+
+
+<script>
+
+const accordionHeaders = document.getElementsByClassName('accordion-header');
+const accordionContents = document.getElementsByClassName('accordion-content');
+const accordionSymbols = document.getElementsByClassName('accordion-symbol');
+
+for (let i=0; i < accordionHeaders.length; i++) {
+  accordionHeaders[i].addEventListener('click', () => {
+    accordionContents[i].style.display = accordionContents[i].style.display == 'block' ? 'none' : 'block';
+    accordionIcons[i].innerHTML = accordionContents[i].style.display == 'block' ? '-' : '+';
+  });
+}
+
+  </script>
